@@ -6,11 +6,11 @@ class CoffeeService {
     return [
       Coffee(
         id: '1',
-        name: 'Swan Latte',
-        description: 'Our signature latte featuring an elegant swan design crafted in microfoam.',
+        name: 'Golden Fern Latte',
+        description: 'A beautifully crafted latte featuring an intricate fern design in rich microfoam.',
         price: 5.99,
-        imageUrl: 'assets/images/swan_latte.jpg',
-        latteArtStyles: ['Swan', 'Premium', 'Signature'],
+        imageUrl: 'assets/images/golden_fern_latte.jpg',
+        latteArtStyles: ['Fern', 'Premium', 'Signature'],
         isFeatured: true,
         category: 'Signature Lattes',
       ),

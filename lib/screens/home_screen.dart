@@ -44,7 +44,6 @@ class _HomeScreenState extends State<HomeScreen> {
             expandedHeight: 200,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: const Text('Latte Haven'),
               background: Image.asset(
                 'assets/images/coffee_banner.jpg',
                 fit: BoxFit.cover,
