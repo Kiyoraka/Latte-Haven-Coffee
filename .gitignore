@@ -8,3 +8,6 @@
 .dart_tool/
 build/83bdcf4feb0211ae628baffce193fe6e/
 build/app/
+android/
+build/
+.dart_tool/

@@ -38,6 +38,7 @@ dependencies:
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10 
 
 # Add after flutter: section and dependencies/dev_dependencies
 flutter_launcher_icons:
@@ -48,6 +49,21 @@ flutter_launcher_icons:
   adaptive_icon_background: "#5D4037"  # A coffee brown color
   adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"  # Foreground image
   remove_alpha_ios: true    # Remove transparency for iOS
+
+
+  # Add this section after the flutter_launcher_icons section
+flutter_native_splash:
+  color: "#F7E4C4"  # Using the cream color from your theme
+  image: "assets/images/splash_logo.png"  # Create this splash logo image
+  # Or use a logo with background:
+  # background_image: "assets/images/splash_background.png"
+  
+  # Customize for different screen sizes and orientations
+  android_12:
+    image: assets/images/splash_logo.png
+    icon_background_color: "#F7E4C4"
+    
+  fullscreen: true
 
 
   # The "flutter_lints" package below contains a set of recommended lints to

@@ -13,6 +13,9 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Your Cart'),
+        iconTheme: const IconThemeData(
+          color: Colors.white, // This makes the back arrow white
+        ),
       ),
       body: Consumer<Order>(
         builder: (context, order, child) {

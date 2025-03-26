@@ -87,6 +87,9 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Checkout'),
+        iconTheme: const IconThemeData(
+          color: Colors.white, // This makes the back arrow white
+        ),
       ),
       body: Form(
         key: _formKey,
