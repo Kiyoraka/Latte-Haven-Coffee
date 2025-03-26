@@ -38,40 +38,38 @@ dependencies:
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
-  flutter_native_splash: ^2.3.10 
+  flutter_native_splash: ^2.3.10
+  flutter_lints: ^5.0.0
 
-# Add after flutter: section and dependencies/dev_dependencies
-flutter_launcher_icons:
-  android: "launcher_icon"  # The name of the icon file (don't change this)
-  ios: true                 # Generate iOS icons too
-  image_path: "assets/icons/app_icon.png"  # Path to your main icon
-  min_sdk_android: 21       # Minimum Android SDK version
-  adaptive_icon_background: "#5D4037"  # A coffee brown color
-  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"  # Foreground image
-  remove_alpha_ios: true    # Remove transparency for iOS
-
-
-  # Add this section after the flutter_launcher_icons section
 flutter_native_splash:
-  color: "#F7E4C4"  # Using the cream color from your theme
-  image: "assets/images/splash_logo.png"  # Create this splash logo image
-  # Or use a logo with background:
-  # background_image: "assets/images/splash_background.png"
+  # For non-Android 12 devices, use this for full-screen splash
+  background_image: "assets/images/splash_logo.png"
   
-  # Customize for different screen sizes and orientations
-  android_12:
-    image: assets/images/splash_logo.png
-    icon_background_color: "#F7E4C4"
-    
+  # These ensure the image is displayed properly
+  android: true
+  ios: true
+  web: false
+  
+  # Different fill modes
+  android_gravity: center
+  ios_content_mode: scaleAspectFill
+  
+  # Make sure it's fullscreen
   fullscreen: true
-
+  
+  # Don't use the Android 12 configuration - it enforces the circular icon
+  android_12: 
+    # Android 12+ has restrictions that force circular icons
+    # We'll handle this separately with a custom splash screen
+    image: null
+    color: "#F7E4C4"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  #flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
