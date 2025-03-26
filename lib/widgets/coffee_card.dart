@@ -18,7 +18,7 @@ class CoffeeCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 200,
+        width: 170,
         decoration: BoxDecoration(
           color: AppTheme.milkyWhite,
           borderRadius: BorderRadius.circular(16),
