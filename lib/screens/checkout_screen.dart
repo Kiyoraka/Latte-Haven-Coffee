@@ -284,18 +284,6 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                       activeColor: AppTheme.darkBrown,
                       contentPadding: EdgeInsets.zero,
                     ),
-                    RadioListTile<bool>(
-                      title: const Text('Delivery'),
-                      value: false,
-                      groupValue: _isPickup,
-                      onChanged: (value) {
-                        setState(() {
-                          _isPickup = value!;
-                        });
-                      },
-                      activeColor: AppTheme.darkBrown,
-                      contentPadding: EdgeInsets.zero,
-                    ),
                     if (!_isPickup)
                       Padding(
                         padding: const EdgeInsets.only(top: 8),

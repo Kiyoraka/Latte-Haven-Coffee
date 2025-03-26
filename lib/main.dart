@@ -1,11 +1,13 @@
 // lib/main.dart
 import 'package:flutter/material.dart';
+import 'package:lattehavencoffee_app/screens/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'config/theme.dart';
 import 'config/route.dart';
 import 'models/order.dart';
 import 'screens/home_screen.dart';
 
+// In main.dart
 void main() {
   runApp(const LatteHavenApp());
 }
@@ -21,7 +23,7 @@ class LatteHavenApp extends StatelessWidget {
         title: 'Latte Haven Coffee',
         theme: AppTheme.theme,
         debugShowCheckedModeBanner: false,
-        home: const HomeScreen(),
+        home: const SplashScreen(), // Set this to your custom splash screen
         onGenerateRoute: AppRoutes.generateRoute,
       ),
     );

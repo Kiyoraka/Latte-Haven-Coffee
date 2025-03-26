@@ -38,31 +38,8 @@ dependencies:
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
-  flutter_native_splash: ^2.3.10
   flutter_lints: ^5.0.0
 
-flutter_native_splash:
-  # For non-Android 12 devices, use this for full-screen splash
-  background_image: "assets/images/splash_logo.png"
-  
-  # These ensure the image is displayed properly
-  android: true
-  ios: true
-  web: false
-  
-  # Different fill modes
-  android_gravity: center
-  ios_content_mode: scaleAspectFill
-  
-  # Make sure it's fullscreen
-  fullscreen: true
-  
-  # Don't use the Android 12 configuration - it enforces the circular icon
-  android_12: 
-    # Android 12+ has restrictions that force circular icons
-    # We'll handle this separately with a custom splash screen
-    image: null
-    color: "#F7E4C4"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

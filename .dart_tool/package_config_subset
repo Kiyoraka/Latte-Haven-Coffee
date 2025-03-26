@@ -1,7 +1,3 @@
-ansicolor
-3.0
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/ansicolor-2.0.3/
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/ansicolor-2.0.3/lib/
 archive
 3.0
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/archive-4.0.5/
@@ -30,10 +26,6 @@ crypto
 3.4
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.6/
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.6/lib/
-csslib
-3.1
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.2/
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.2/lib/
 cupertino_icons
 3.1
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/
@@ -50,14 +42,6 @@ flutter_lints
 3.5
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib/
-flutter_native_splash
-3.0
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_native_splash-2.4.5/
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_native_splash-2.4.5/lib/
-html
-3.2
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5/
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5/lib/
 image
 3.0
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.4/
@@ -114,10 +98,6 @@ typed_data
 3.5
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0/
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0/lib/
-universal_io
-2.17
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/universal_io-2.2.2/
-file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/universal_io-2.2.2/lib/
 vector_math
 2.14
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/
@@ -138,10 +118,6 @@ flutter
 3.7
 file:///C:/Users/User/flutter/packages/flutter/
 file:///C:/Users/User/flutter/packages/flutter/lib/
-flutter_web_plugins
-3.7
-file:///C:/Users/User/flutter/packages/flutter_web_plugins/
-file:///C:/Users/User/flutter/packages/flutter_web_plugins/lib/
 lattehavencoffee_app
 3.7
 file:///D:/Afif%20Personal/Github%20Personal%20Project/Latte%20Haven%20Coffee/lattehavencoffee_app/
