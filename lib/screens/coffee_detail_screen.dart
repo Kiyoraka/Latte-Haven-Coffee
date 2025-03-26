@@ -19,8 +19,8 @@ class CoffeeDetailScreen extends StatelessWidget {
           SliverAppBar(
             expandedHeight: 300,
             pinned: true,
+            automaticallyImplyLeading: false,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(coffee.name),
               background: Hero(
                 tag: 'coffee-${coffee.id}',
                 child: Image.asset(
@@ -44,6 +44,18 @@ class CoffeeDetailScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Center(
+                    child: Text(
+                      coffee.name,
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: AppTheme.darkBrown,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  const SizedBox(height: 32),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -128,6 +140,27 @@ class CoffeeDetailScreen extends StatelessWidget {
                     child: const Text(
                       'Add to Cart',
                       style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  // Updated Back button to match Add to Cart style
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.darkBrown,
+                      minimumSize: const Size(double.infinity, 50),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const SizedBox(width: 8),
+                        const Text(
+                          'Back to Menu',
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ],
                     ),
                   ),
                 ],

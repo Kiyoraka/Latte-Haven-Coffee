@@ -21,7 +21,7 @@ class CoffeeService {
         price: 5.79,
         imageUrl: 'assets/images/sheep_latte.jpg',
         latteArtStyles: ['Animal', 'Cute', '3D Foam'],
-        isFeatured: true,
+        isFeatured: false,
         category: 'Character Lattes',
       ),
       Coffee(
@@ -31,7 +31,7 @@ class CoffeeService {
         price: 5.49,
         imageUrl: 'assets/images/maple_leaf_latte.jpg',
         latteArtStyles: ['Leaf', 'Seasonal', 'Nature'],
-        isFeatured: true,
+        isFeatured: false,
         category: 'Seasonal Specials',
       ),
       Coffee(
@@ -51,7 +51,7 @@ class CoffeeService {
         price: 6.49,
         imageUrl: 'assets/images/horse_latte.jpg',
         latteArtStyles: ['Animal', 'Realistic', 'Dynamic'],
-        isFeatured: true,
+        isFeatured: false,
         category: 'Character Lattes',
       ),
       Coffee(
@@ -101,7 +101,7 @@ class CoffeeService {
         price: 5.99,
         imageUrl: 'assets/images/hummingbird_latte.jpg',
         latteArtStyles: ['Animal', 'Delicate', 'Dynamic'],
-        isFeatured: true,
+        isFeatured: false,
         category: 'Character Lattes',
       ),
     ];
