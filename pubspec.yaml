@@ -37,8 +37,18 @@ dependencies:
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+# Add after flutter: section and dependencies/dev_dependencies
+flutter_launcher_icons:
+  android: "launcher_icon"  # The name of the icon file (don't change this)
+  ios: true                 # Generate iOS icons too
+  image_path: "assets/icons/app_icon.png"  # Path to your main icon
+  min_sdk_android: 21       # Minimum Android SDK version
+  adaptive_icon_background: "#5D4037"  # A coffee brown color
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"  # Foreground image
+  remove_alpha_ios: true    # Remove transparency for iOS
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
