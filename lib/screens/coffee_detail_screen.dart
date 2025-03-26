@@ -1,7 +1,10 @@
 // lib/screens/coffee_detail_screen.dart
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../models/coffee.dart';
+import '../models/order.dart';
 import '../config/theme.dart';
+import '../screens/cart_screen.dart';
 
 class CoffeeDetailScreen extends StatelessWidget {
   final Coffee coffee;
@@ -14,6 +17,24 @@ class CoffeeDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        automaticallyImplyLeading: false,
+        actions: [
+          // Add cart icon to the top right
+          IconButton(
+            icon: const Icon(Icons.shopping_cart_outlined, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CartScreen()),
+              );
+            },
+          ),
+        ],
+      ),
+      extendBodyBehindAppBar: true,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -125,11 +146,31 @@ class CoffeeDetailScreen extends StatelessWidget {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: () {
-                      // Add to cart logic would go here
+                      // Create a cart item
+                      final cartItem = CartItem(
+                        coffee: coffee,
+                        quantity: 1,
+                      );
+                      
+                      // Add to order/cart
+                      final order = Provider.of<Order>(context, listen: false);
+                      order.addItem(cartItem);
+                      
+                      // Show confirmation
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('${coffee.name} added to cart'),
                           backgroundColor: AppTheme.darkBrown,
+                          action: SnackBarAction(
+                            label: 'VIEW CART',
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const CartScreen()),
+                              );
+                            },
+                            textColor: Colors.white,
+                          ),
                         ),
                       );
                     },
@@ -143,7 +184,6 @@ class CoffeeDetailScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  // Updated Back button to match Add to Cart style
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
