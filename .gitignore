@@ -11,3 +11,4 @@ build/app/
 android/
 build/
 .dart_tool/
+build/cache.dill.track.dill
